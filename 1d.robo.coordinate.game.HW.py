@@ -2,7 +2,7 @@ from os import system
 # a - move left
 # d - move right
 
-length  = 20
+length  = range(1,21)
 roboX   = 5
 
 bomb1X  = 8
@@ -52,7 +52,7 @@ while True:
     x = 1
     print("\n")
 
-    while x <= length:
+    for x in length:
         if x == roboX:
             print("😶", end = "")  
         elif x == bomb1X or x == bomb2X or x == bomb3X:
